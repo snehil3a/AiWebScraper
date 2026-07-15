@@ -5,13 +5,11 @@
 [![Coverage Status](https://coveralls.io/repos/github/website-scraper/node-website-scraper/badge.svg?branch=master)](https://coveralls.io/github/website-scraper/node-website-scraper?branch=master)
 
 
-# website-scraper
+# AiWebScraper
 
 [Options](#usage) | [Plugins](#plugins) | [Log and debug](#log-and-debug) | [Frequently Asked Questions](https://github.com/website-scraper/node-website-scraper/blob/master/docs/FAQ.md) | [Contributing](https://github.com/website-scraper/node-website-scraper/blob/master/CONTRIBUTING.md) | [Code of Conduct](https://github.com/website-scraper/node-website-scraper/blob/master/CODE_OF_CONDUCT.md)
 
-Download the website to the local directory (including all css, images, js, etc.)
-
-**Note:** by default dynamic websites (where content is loaded by js) may not be saved correctly because `website-scraper` doesn't execute js, it only parses http responses for html and css files. If you need to download a dynamic website take a look at [website-scraper-puppeteer](https://github.com/website-scraper/website-scraper-puppeteer).
+AiWebScraper is a Node.js utility designed to download entire websites to a local directory, capturing all associated assets like CSS, images, and JavaScript files. It offers extensive customization through a variety of options, allowing users to configure recursive hyperlink following, define depth limits, filter URLs, and organize downloaded files into specific subdirectories based on their extensions. Operating as a pure ESM module (requiring Node.js v20.18.1 or higher), the scraper also features a robust plugin system. This extensibility is particularly useful for handling dynamic, JavaScript-rendered content via plugins like website-scraper-puppeteer, or for customizing request options, response handling, and file naming generation throughout the scraping lifecycle.
 
 ## Sponsors
 Maintenance of this project is made possible by all the [contributors](https://github.com/website-scraper/node-website-scraper/graphs/contributors) and [sponsors](https://github.com/sponsors/s0ph1e).
